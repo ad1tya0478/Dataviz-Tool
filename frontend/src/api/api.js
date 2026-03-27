@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE = "https://dataviz-pidn.onrender.com";
+const BASE = "https://dataviz-pidn.onrender.com/api";
 
 // Upload a file (CSV or XLSX)
 export const uploadFile = (file) => {
