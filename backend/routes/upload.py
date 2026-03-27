@@ -5,7 +5,7 @@ import io
 
 from utils.data_processor import save_dataframe, dataframe_info, df_preview
 
-router = APIRouter()
+router = APIRouter(prefix="/api")
 
 
 @router.post("/upload")

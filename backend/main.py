@@ -4,10 +4,11 @@ from routes import upload, filter, visualize, stats
 
 app = FastAPI(title="DataViz API")
 
-# Allow frontend (React on port 3000) to talk to this backend
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["https://dataviz-pidn.onrender.com",
+                   "http://localhost:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
